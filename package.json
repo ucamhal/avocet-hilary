@@ -42,6 +42,7 @@
     "mkdirp": "latest",
     "multiparty": "latest",
     "natural": "latest",
+    "node-esapi": "latest",
     "nodemailer": "latest",
     "oae-activity": "",
     "oae-authentication": "",
