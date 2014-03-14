@@ -34,13 +34,13 @@ config.ui = {
 // Cassandra related config information.
 config.cassandra = {
     'hosts': ['127.0.0.1:9160'],
-    'keyspace': 'oae',
+    'keyspace': 'avocet',
     'user': '',
     'pass': '',
     'timeout': 3000,
     'replication': 1,
     'strategyClass': 'SimpleStrategy',
-    'cqlVersion': '2.0.0'
+    'cqlVersion': '3.0.0'
 };
 
 // The redis related configuration information.
@@ -81,7 +81,7 @@ config.servers = {
 };
 
 var tmpDir = process.env.TMP || process.env.TMPDIR || process.env.TEMP || '/tmp' || process.cwd();
-tmpDir += '/oae';
+tmpDir += '/avocet';
 
 /**
  * `config.files`
@@ -169,7 +169,7 @@ config.search = {
         }
     ],
     'index': {
-        'name': 'oae',
+        'name': 'avocet',
         'settings': {
             'number_of_shards': 5,
             'number_of_replicas': 1,
