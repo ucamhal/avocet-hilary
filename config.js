@@ -28,7 +28,7 @@ var config = module.exports.config = {};
  * @param  {String}    path            The path to the UI static assets
  */
 config.ui = {
-    'path': '../3akai-ux'
+    'path': '../avocet-ui'
 };
 
 // Cassandra related config information.
