@@ -13,6 +13,7 @@ node_modules/*
 !node_modules/oae-email
 !node_modules/oae-following
 !node_modules/oae-google-analytics
+!node_modules/oae-journals
 !node_modules/oae-library
 !node_modules/oae-logger
 !node_modules/oae-mediacore
