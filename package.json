@@ -43,6 +43,7 @@
     "multiparty": "latest",
     "natural": "latest",
     "node-esapi": "latest",
+    "node-zendesk": "latest",
     "nodemailer": "latest",
     "oae-activity": "",
     "oae-authentication": "",
