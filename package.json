@@ -69,6 +69,7 @@
     "oae-telemetry": "",
     "oae-tenants": "",
     "oae-tests": "",
+    "oae-tickets": "",
     "oae-tincanapi": "",
     "oae-ui": "",
     "oae-util": "",
@@ -149,6 +150,7 @@
     "oae-telemetry",
     "oae-tenants",
     "oae-tests",
+    "oae-tickets",
     "oae-tincanapi",
     "oae-ui",
     "oae-util"
