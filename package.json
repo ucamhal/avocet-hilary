@@ -44,6 +44,7 @@
     "natural": "latest",
     "node-esapi": "latest",
     "nodemailer": "latest",
+    "node-zendesk": "latest",
     "oae-activity": "",
     "oae-authentication": "",
     "oae-authz": "",
