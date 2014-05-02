@@ -8,8 +8,8 @@ branches:
 
 env:
   global:
-    - secure: T23GAZQqZsNKK7OXEr0d3UwFoE/8hAgPOF5jgdTAJTHI6Jq+OjOv9jt+QvuKxpfqt3/yz+JzztRJAw12CD1BHej4L6NSXIalUfnn2EF93otFRSTRBQ2uzofBJ+MtUQqyCRG7Ha8sjEWoWc/QkdZbFGTaJpQpUuBt1oSabT0D3zA=
-    - secure: T1wEYmk7AhKxIGtDbb12ERT18sNb/92vL1VBo42Q4JMd4ww/Z3E7su5T3IsVY3cjaE2X7oKNVBWx9TWvkJJnHk5UiN3SmKiIGcFNKOvp6ha9BW0JyVAk5lPRh5poq33GrCvkZT3YKX7AgI/+7TutrbYVE/o5Bs599rF+8l8dSkk=
+    - secure: ByuH243AwF67+aPXbLLwMOgZKlETnC0AcspFO3iIV9vbcpUyTUGjR1l9/HbOof6NwpdgXYw93nkSyKvqj7yKXVJmGq77j1+lKKPra1/IidiFvb9ELel241g2TLwk7FQ47NbkCMtcn4g8z4RrTl4yMtZKx17qfCNK/iMERiGHSJ4=
+    - secure: e47epKU9R/F6fHoAFOTUp0CK7+/W+od0C9cp5sul5ovxGlbb2ep9UmdyLIwUL+FiAAZS813szCOusgrVLS2jyZeu3+pz6/jhIANbUjdIgpSoqkTRlUcnlYh3l6IsvlcUfU6MjQ1EsQd1waw//M4KKZQgsnc+dMV89cn5m0Hks50=
 
 before_install:
   # Add DataStax apt repo for Cassandra
@@ -50,7 +50,7 @@ before_install:
   # Install Hilary deps
   - sudo apt-get install -qq graphicsmagick libreoffice pdftk chrpath pdf2htmlex
   - npm install -g grunt-cli
-  - git clone --depth 1 --branch master git://github.com/oaeproject/3akai-ux.git ../3akai-ux
+  - git clone --depth 1 --branch master git://github.com/CUL-DigitalServices/avocet-ui.git ../avocet-ui
 
   # Install etherpad-lite
   - sudo apt-get install etherpad-lite
@@ -72,7 +72,7 @@ before_install:
   - node src/node/server.js &> /dev/null &
 
   # Position ourselves to start the test in "script" phase
-  - cd ~/build/oaeproject/Hilary
+  - cd ~/build/CUL-DigitalServices/avocet-hilary
 
   # Enable preview processing
   - printf "\n\nconfig.previews.enabled = true;" >> config.js
@@ -81,7 +81,6 @@ before_install:
   - printf "\nconfig.previews.pdf2htmlEX.binary = '/usr/bin/pdf2htmlEX';" >> config.js
 
 services:
-  - elasticsearch
   - rabbitmq
   - redis-server
 
@@ -96,11 +95,5 @@ after_failure:
   - npm install -g bunyan
   - cat tests.log | bunyan -l error
 
-  # Compress the logs and upload them to Amazon S3
-  - gzip tests.log
-  - bin/upload_logs
-
 notifications:
-  email:
-    - oae-team@collab.sakaiproject.org
-  irc: "irc.freenode.org#oae"
+  irc: "irc.freenode.org#ucam-ds-oa"

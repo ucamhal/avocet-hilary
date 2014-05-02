@@ -9,14 +9,14 @@
 #   * The build was not performed on a pull request to the master branch
 ##
 
-EXPECTED_REPOSITORY="oaeproject/Hilary"
+EXPECTED_REPOSITORY="CUL-DigitalServices/avocet-hilary"
 EXPECTED_BRANCH="master"
 EXPECTED_PULL_REQUEST=false
 
 function package_and_upload {
     git reset --hard $TRAVIS_COMMIT
     npm shrinkwrap
-    bin/package -su --upload-bucket=oae-releases --upload-region=us-east-1
+    bin/package -su --upload-bucket=avocet-releases --upload-region=eu-west-1
 }
 
 if [[ "$TRAVIS_REPO_SLUG" == "$EXPECTED_REPOSITORY" && "$TRAVIS_BRANCH" == "$EXPECTED_BRANCH" && "$TRAVIS_PULL_REQUEST" == "$EXPECTED_PULL_REQUEST" ]]; then

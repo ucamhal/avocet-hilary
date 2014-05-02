@@ -71,6 +71,7 @@
     "oae-tenants": "",
     "oae-tests": "",
     "oae-tickets": "",
+    "oae-tickets-zendesk": "",
     "oae-tincanapi": "",
     "oae-ui": "",
     "oae-util": "",
@@ -152,6 +153,7 @@
     "oae-tenants",
     "oae-tests",
     "oae-tickets",
+    "oae-tickets-zendesk",
     "oae-tincanapi",
     "oae-ui",
     "oae-util"
