@@ -67,7 +67,7 @@ if (!argv.s) {
 // using a combination of the package.json version and the closest matching tag using git describe
 var hilaryVersion = argv.v || CoreUtil.gitVersion(packageJson.version, 7);
 
-CoreUtil.logSuccess('Resolved hilary version to be '.text + hilaryVersion.white);
+CoreUtil.logSuccess('Resolved avocet-hilary version to be '.text + hilaryVersion.white);
 
 // Copy the release files to the source directory
 var srcDir = PackageUtil.copyHilaryReleaseFiles(argv.o, 8).srcDir;
