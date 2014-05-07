@@ -36,8 +36,8 @@ if (argv.h) {
 }
 
 // Ensure that we're on the master branch
-if (process.env['TRAVIS_REPO_SLUG'] !== 'oaeproject/Hilary' || process.env['TRAVIS_BRANCH'] !== 'master' || process.env['TRAVIS_PULL_REQUEST'] == 'true') {
-    console.log('Only uploading logs for commits on oaeproject/Hilary#master');
+if (process.env['TRAVIS_REPO_SLUG'] !== 'CUL-DigitalServices/avocet-hilary' || process.env['TRAVIS_BRANCH'] !== 'master' || process.env['TRAVIS_PULL_REQUEST'] == 'true') {
+    console.log('Only uploading logs for commits on CUL-DigitalServices/avocet-hilary#master');
     return;
 }
 

@@ -97,4 +97,4 @@ if (argv.p || argv.u) {
 // Remove the shrinkwrap and commit it for master
 ReleaseUtil.gitRemoveShrinkwrapAndCommit(argv.v, remoteName, 11);
 
-CoreUtil.logSuccess('Successfully released Hilary '.text + argv.v.white + ' to the remote repository '.text + remoteName.white);
+CoreUtil.logSuccess('Successfully released avocet-hilary '.text + argv.v.white + ' to the remote repository '.text + remoteName.white);
