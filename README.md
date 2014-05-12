@@ -3,8 +3,7 @@
 Hilary is the back-end for the [Open Academic Environment](http://www.oaeproject.org/)
 
 ## Build status
-[![Build Status](https://travis-ci.org/oaeproject/Hilary.png?branch=master)](https://travis-ci.org/oaeproject/Hilary)
-[![Coverage Status](https://coveralls.io/repos/oaeproject/Hilary/badge.png)](https://coveralls.io/r/oaeproject/Hilary)
+[![Build Status](https://travis-ci.org/CUL-DigitalServices/avocet-hilary.svg?branch=master)](https://travis-ci.org/CUL-DigitalServices/avocet-hilary)
 
 ## Quickstart Guide
 
