@@ -71,6 +71,7 @@ before_install:
   - printf "\nconfig.previews.pdf2htmlEX.binary = '/usr/bin/pdf2htmlEX';" >> config.js
 
 services:
+  - elasticsearch
   - rabbitmq
   - redis-server
 
