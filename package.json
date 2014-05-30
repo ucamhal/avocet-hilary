@@ -27,7 +27,7 @@
     "bunyan": "latest",
     "cas-sfu": "git://github.com/nicolaasmatthijs/node-cas-sfu.git",
     "clone": "latest",
-    "connect": "latest",
+    "connect": "2.18.0",
     "connect-redis": "latest",
     "cookie-parser": "latest",
     "cookie-session": "latest",
