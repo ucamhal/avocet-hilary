@@ -1,1 +1,2 @@
-ALTER TABLE "Publications" ADD "institution" text;
+ALTER TABLE "Publications" ADD "institution" text, "underEmbargo" boolean, "embargoDate" text;
+ALTER TABLE "Publications" ALTER acceptanceDate TYPE text;
