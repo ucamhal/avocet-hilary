@@ -1,1 +1,3 @@
 ALTER TABLE "Publications" ADD "institution" text;
+ALTER TABLE "Publications" ADD "underEmbargo" boolean;
+ALTER TABLE "Publications" ADD "embargoDate" bigint;
