@@ -43,7 +43,7 @@
     "helenus": "latest",
     "juice": "latest",
     "less": "latest",
-    "locale": "latest",
+    "locale": "0.0.17",
     "mailparser": "latest",
     "mime": "latest",
     "mkdirp": "latest",
