@@ -37,7 +37,7 @@ before_install:
   - export PATH=`pwd`/apache-cassandra-1.2.19/bin:$PATH
   - which cassandra
   - which cqlsh
-  - sudo cassandra
+  - sudo sh apache-cassandra-1.2.19/bin/cassandra
 
 
   # Turn off unneeded services to free some memory
