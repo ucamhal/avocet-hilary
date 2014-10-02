@@ -101,5 +101,3 @@ after_failure:
   - npm install -g bunyan
   - cat tests.log | bunyan -l error
 
-notifications:
-  irc: "irc.freenode.org#ucam-ds-oa"
