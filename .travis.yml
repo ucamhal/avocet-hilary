@@ -39,6 +39,7 @@ before_install:
   - which cassandra
   - which cqlsh
   - sudo sh apache-cassandra-1.2.19/bin/cassandra
+  - cd $TRAVIS_BUILD_DIR
 
 
   # Turn off unneeded services to free some memory
