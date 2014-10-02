@@ -33,7 +33,12 @@ before_install:
   - sudo rm -rf /var/lib/cassandra/*
   - wget http://www.us.apache.org/dist/cassandra/1.2.19/apache-cassandra-1.2.19-bin.tar.gz
   - echo "06e0a3d4242405bbf1b6094e409d6e18  apache-cassandra-1.2.19-bin.tar.gz" | md5sum --check -
-  - tar -xvzf apache-cassandra-1.2.19-bin.tar.gz && sudo sh apache-cassandra-1.2.19/bin/cassandra
+  - tar -xvzf apache-cassandra-1.2.19-bin.tar.gz
+  - export PATH=`pwd`/apache-cassandra-1.2.19/bin:$PATH
+  - which cassandra
+  - which cqlsh
+  - sudo cassandra
+
 
   # Turn off unneeded services to free some memory
   - sudo service mysql stop
