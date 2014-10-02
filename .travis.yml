@@ -78,7 +78,7 @@ before_install:
   - node node_modules/ep_etherpad-lite/node/server.js &
 
   # Position ourselves to start the test in "script" phase
-  - cd ~/build/CUL-DigitalServices/avocet-hilary
+  - cd $TRAVIS_BUILD_DIR
 
   # Enable preview processing
   - printf "\n\nconfig.previews.enabled = true;" >> config.js
